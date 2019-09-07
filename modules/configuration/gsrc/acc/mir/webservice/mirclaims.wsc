@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<webservice-collection xmlns="http://guidewire.com/config/webservicecollection">
+  <resources>
+    <resource>
+      <url>file:/ClaimCenter/DataService.xml</url>
+    </resource>
+  </resources>
+  <settings></settings>
+</webservice-collection>

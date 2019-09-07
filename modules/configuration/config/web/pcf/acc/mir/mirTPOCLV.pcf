@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
+  <ListViewPanel
+    id="mirTPOCLV">
+    <Require
+      name="anMIRReportable_Acc"
+      type="MIRReportable_Acc"/>
+    <RowIterator
+      editable="true"
+      elementName="TPOCDetail"
+      pageSize="5"
+      toAdd="anMIRReportable_Acc.addToTPOC(TPOCDetail)"
+      toRemove="anMIRReportable_Acc.removeFromTPOC(TPOCDetail)"
+      value="anMIRReportable_Acc.TPOC"
+      valueType="entity.MIRReportableTPOC_Acc[]">
+      <Row/>
+    </RowIterator>
+  </ListViewPanel>
+</PCF>
