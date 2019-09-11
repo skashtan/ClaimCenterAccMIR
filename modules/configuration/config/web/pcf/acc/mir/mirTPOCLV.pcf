@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
   <ListViewPanel
-    id="mirTPOCLV">
+    id="MirTPOCLV">
     <Require
       name="anMIRReportable_Acc"
       type="MIRReportable_Acc"/>
