@@ -15,7 +15,7 @@ columnName="Tpoc1Amount"
 desc="Dollar amount of the total payment obligation to the claimant."
 name="TpocAmount"
 nullok="true"
-type="currencyamount"></column>
+type="money"></column>
 <column
 columnName="Tpoc1DelayedFunding"
 desc="If funding for the TPOC Amount is delayed, provide actual or estimated date of funding"

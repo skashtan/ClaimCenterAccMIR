@@ -15,13 +15,6 @@
       value="64"/>
   </column>
   <column
-    default="false"
-    desc="prevents transmission to CMS"
-    name="Hold"
-    nullok="false"
-    required="true"
-    type="bit"/>
-  <column
     columnName="HicnOrMbi"
     desc="Medicare Health Insurance Claim Number or Medicare Beneficiary Identifier"
     name="HICNOrMBI"
@@ -31,12 +24,6 @@
       name="size"
       value="12"/>
   </column>
-  <column
-    columnName="SSN"
-    desc="Social Security Number"
-    name="SSN"
-    nullok="true"
-    type="ssn"/>
   <column
     columnName="CmsDateOfIncident"
     desc="Date of Incident as defined by CMS"

@@ -25,7 +25,7 @@
     desc="Yes/No flag indicating the reportable status of the claim"
     name="CMSReportable"
     nullok="false"
-    type="text"/>
+    type="bit"/>
   <column
     desc="Returns the beneficiary status"
     name="BeneficiaryStatus"
