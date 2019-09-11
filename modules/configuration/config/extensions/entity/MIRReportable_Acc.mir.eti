@@ -5,6 +5,7 @@
   table="mirreportable_acc"
   type="retireable">
   <column
+    allowInitialValueForUpgrade="true"
     desc="Internal Control Number - Unique identifier in MIR System"
     name="ICN"
     nullok="false"
@@ -30,13 +31,6 @@
     name="CMSDateOfIncident"
     nullok="true"
     type="dateonly"/>
-  <typekey
-    columnName="ORM"
-    desc="Indication of whether there is on-going responsibility for medicals (ORM)"
-    name="ORM"
-    nullok="false"
-    required="true"
-    typelist="YesNo"/>
   <column
     columnName="OrmTermDate"
     desc="Date ongoing responsibility for medicals ended, where applicable"
@@ -48,11 +42,6 @@
     arrayentity="MIRReportableHist_Acc"
     desc="Array of each time this claim was reported"
     name="MIRReportingHistorys"/>
-  <foreignkey
-    desc="link to exposure that is being reported upon"
-    fkentity="Exposure"
-    name="ReportableExposure"
-    nullok="false"/>
   <column
     desc="The RRE ID corresponding to the claim"
     name="RREID"
@@ -75,10 +64,13 @@
     name="HoldStatus"
     nullok="true"
     type="bit"/>
-  <implementsEntity
-    name="Extractable"/>
   <array
     arrayentity="MIRReportableTPOC_Acc"
     desc="Total Payment Obligation to Claimant"
     name="TPOC"/>
+  <column
+    desc="Indication of whether there is on-going responsibility for medicals (ORM)"
+    name="HasORM"
+    nullok="true"
+    type="bit"/>
 </entity>

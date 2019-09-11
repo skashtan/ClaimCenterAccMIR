@@ -45,6 +45,4 @@
     fkentity="MIRReportableHist_Acc"
     name="MIRReportableHist"
     nullok="false"/>
-  <implementsEntity
-    name="Extractable"/>
 </entity>

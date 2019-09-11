@@ -11,11 +11,11 @@ name="TpocDate"
 nullok="true"
 type="dateonly"/>
 <column
-columnName="Tpoc1Amount"
+columnName="TpocAmount"
 desc="Dollar amount of the total payment obligation to the claimant."
 name="TpocAmount"
 nullok="true"
-type="money"></column>
+type="currencyamount"></column>
 <column
 columnName="Tpoc1DelayedFunding"
 desc="If funding for the TPOC Amount is delayed, provide actual or estimated date of funding"

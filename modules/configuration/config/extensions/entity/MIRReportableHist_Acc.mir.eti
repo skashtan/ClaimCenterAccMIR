@@ -22,11 +22,6 @@
     nullok="true"
     type="text"/>
   <column
-    desc="Yes/No flag indicating the reportable status of the claim"
-    name="CMSReportable"
-    nullok="false"
-    type="bit"/>
-  <column
     desc="Returns the beneficiary status"
     name="BeneficiaryStatus"
     nullok="false"
@@ -70,6 +65,9 @@
     arrayentity="MIRReportableRespCode_Acc"
     desc="Array of MIRReportableResponseCodes"
     name="MIRResponseCodes"/>
-  <implementsEntity
-    name="Extractable"/>
+  <column
+    desc="Yes/No flag indicating the reportable status of the "
+    name="IsCMSReportable"
+    nullok="false"
+    type="bit"/>
 </entity>
