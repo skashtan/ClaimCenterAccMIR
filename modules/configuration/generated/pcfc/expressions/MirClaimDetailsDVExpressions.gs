@@ -21,13 +21,18 @@ class MirClaimDetailsDVExpressions {
       def.onEnter(anExposure.mirReportable_Acc)
     }
     
-    // 'def' attribute on InputSetRef (id=OrmRef) at MirClaimDetailsDV.pcf: line 25, column 22
-    function def_onEnter_2 (def :  pcf.MirORMInputSet) : void {
+    // 'def' attribute on InputSetRef (id=mirExposureInputSetRef) at MirClaimDetailsDV.pcf: line 20, column 38
+    function def_onEnter_2 (def :  pcf.MIRExposureInputSet) : void {
+      def.onEnter(anExposure)
+    }
+    
+    // 'def' attribute on InputSetRef (id=OrmRef) at MirClaimDetailsDV.pcf: line 28, column 22
+    function def_onEnter_4 (def :  pcf.MirORMInputSet) : void {
       def.onEnter(anExposure.mirReportable_Acc)
     }
     
-    // 'def' attribute on ListViewInput (id=mirTpocLv) at MirClaimDetailsDV.pcf: line 32, column 24
-    function def_onEnter_4 (def :  pcf.MirTPOCLV) : void {
+    // 'def' attribute on ListViewInput (id=mirTpocLv) at MirClaimDetailsDV.pcf: line 35, column 24
+    function def_onEnter_6 (def :  pcf.MirTPOCLV) : void {
       def.onEnter(anExposure.mirReportable_Acc)
     }
     
@@ -36,13 +41,18 @@ class MirClaimDetailsDVExpressions {
       def.refreshVariables(anExposure.mirReportable_Acc)
     }
     
-    // 'def' attribute on InputSetRef (id=OrmRef) at MirClaimDetailsDV.pcf: line 25, column 22
-    function def_refreshVariables_3 (def :  pcf.MirORMInputSet) : void {
+    // 'def' attribute on InputSetRef (id=mirExposureInputSetRef) at MirClaimDetailsDV.pcf: line 20, column 38
+    function def_refreshVariables_3 (def :  pcf.MIRExposureInputSet) : void {
+      def.refreshVariables(anExposure)
+    }
+    
+    // 'def' attribute on InputSetRef (id=OrmRef) at MirClaimDetailsDV.pcf: line 28, column 22
+    function def_refreshVariables_5 (def :  pcf.MirORMInputSet) : void {
       def.refreshVariables(anExposure.mirReportable_Acc)
     }
     
-    // 'def' attribute on ListViewInput (id=mirTpocLv) at MirClaimDetailsDV.pcf: line 32, column 24
-    function def_refreshVariables_5 (def :  pcf.MirTPOCLV) : void {
+    // 'def' attribute on ListViewInput (id=mirTpocLv) at MirClaimDetailsDV.pcf: line 35, column 24
+    function def_refreshVariables_7 (def :  pcf.MirTPOCLV) : void {
       def.refreshVariables(anExposure.mirReportable_Acc)
     }
     

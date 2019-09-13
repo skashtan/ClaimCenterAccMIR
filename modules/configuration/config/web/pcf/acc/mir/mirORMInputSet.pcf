@@ -3,27 +3,21 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
   <InputSet
-    id="mirORMInputSet">
+    editable="true"
+    id="MirORMInputSet">
     <Require
       name="anMIRReportable_Acc"
       type="MIRReportable_Acc"/>
-    <Label
-      id="OrmTitle"
-      label="DisplayKey.get(&quot;Accelerator.mir.heading.orm&quot;)"/>
-    <TypeKeyRadioInput
+    <BooleanRadioInput
       editable="true"
       id="HasOrm"
       label="DisplayKey.get(&quot;Accelerator.mir.label.orm&quot;)"
-      required="true"
-      value="anMIRReportable_Acc.ORM"
-      valueType="typekey.YesNo"/>
+      value="anMIRReportable_Acc.HasORM"
+      visible="true"/>
     <DateInput
-      available="(anMIRReportable_Acc as MIRReportable_Acc).ORM == YesNo.TC_YES"
-      dateFormat="medium"
       editable="true"
       id="OrmTermDate"
       label="DisplayKey.get(&quot;Accelerator.mir.label.ormterm&quot;)"
-      required="true"
       value="anMIRReportable_Acc.ORMTermDate"/>
   </InputSet>
 </PCF>

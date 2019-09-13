@@ -45,19 +45,5 @@
         def="MirClaimDetailsDV(Exposure)"
         id="claimDetailRef"/>
     </Card>
-    <Card
-      id="mirtest"
-      title="&quot;MIR TEst&quot;">
-      <DetailViewPanel>
-        <InputColumn>
-          <TextInput
-            editable="true"
-            id="testinput"
-            label="&quot;test&quot;"
-            value="Exposure.mirReportable_Acc.ICN"
-            visible="true"/>
-        </InputColumn>
-      </DetailViewPanel>
-    </Card>
   </CardViewPanel>
 </PCF>
