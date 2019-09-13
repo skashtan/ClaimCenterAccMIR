@@ -262,6 +262,13 @@
       <PanelRef
         def="ISODetailsDV(Exposure)"/>
     </Card>
+    <Card
+      id="ExposureMIRCard"
+      title="DisplayKey.get(&quot;Accelerator.mir.heading.MirCard&quot;)">
+      <PanelRef
+        def="MirClaimDetailsDV(Exposure)"
+        id="claimDetailRef"/>
+    </Card>
     <Code><![CDATA[
 property get ContactProhibited() : boolean {
 return Exposure.Claim.getClaimContact(Exposure.Claimant).ContactProhibited

@@ -7,14 +7,12 @@
   <column
     desc="Date and time of submission to MIR"
     name="SubmitDateTime"
-    nullok="false"
-    required="true"
+    nullok="true"
     type="datetime"/>
   <column
     desc="Shows if submission was ok or if there are reporting errors"
     name="Status"
-    nullok="false"
-    required="true"
+    nullok="true"
     type="text"/>
   <column
     desc="Details of the error if Status = ERROR"
@@ -24,32 +22,27 @@
   <column
     desc="Returns the beneficiary status"
     name="BeneficiaryStatus"
-    nullok="false"
-    required="true"
+    nullok="true"
     type="text"/>
   <column
     desc="whether or not the claim has passed all validation checks and is ready for reporting"
     name="IsReadyForCMS"
-    nullok="false"
-    required="true"
+    nullok="true"
     type="bit"/>
   <column
     desc="The date this claim was last submitted to CMS, if any"
     name="LastCMSSubmit"
     nullok="true"
-    required="true"
     type="datetime"/>
   <column
     desc="Next scheduled reporting date for this claim"
     name="NextCMSSubmit"
     nullok="true"
-    required="true"
     type="datetime"/>
   <column
     desc="Next scheduled query date for this claim"
     name="NextCMSQuery"
     nullok="true"
-    required="true"
     type="datetime"/>
   <column
     desc="whether or not the diagnosis codes have been locked by Franco Signor"
@@ -60,7 +53,7 @@
     desc="Reverse foreign key to MIRReportable"
     fkentity="MIRReportable_Acc"
     name="MIRReportable"
-    nullok="false"/>
+    nullok="true"/>
   <array
     arrayentity="MIRReportableRespCode_Acc"
     desc="Array of MIRReportableResponseCodes"
@@ -68,6 +61,6 @@
   <column
     desc="Yes/No flag indicating the reportable status of the "
     name="IsCMSReportable"
-    nullok="false"
+    nullok="true"
     type="bit"/>
 </entity>

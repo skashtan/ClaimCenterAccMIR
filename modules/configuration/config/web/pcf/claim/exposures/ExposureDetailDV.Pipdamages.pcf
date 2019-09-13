@@ -45,5 +45,12 @@
       <PanelRef
         def="PIPDeathBenefitsDV(Exposure)"/>
     </Card>
+    <Card
+      id="ExposureMIRCard"
+      title="DisplayKey.get(&quot;Accelerator.mir.heading.MirCard&quot;)">
+      <PanelRef
+        def="MirClaimDetailsDV(Exposure)"
+        id="claimDetailRef"/>
+    </Card>
   </CardViewPanel>
 </PCF>

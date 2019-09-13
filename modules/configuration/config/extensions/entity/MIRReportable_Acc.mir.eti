@@ -8,8 +8,7 @@
     allowInitialValueForUpgrade="true"
     desc="Internal Control Number - Unique identifier in MIR System"
     name="ICN"
-    nullok="false"
-    required="true"
+    nullok="true"
     type="varchar">
     <columnParam
       name="size"
@@ -45,8 +44,7 @@
   <column
     desc="The RRE ID corresponding to the claim"
     name="RREID"
-    nullok="false"
-    required="true"
+    nullok="true"
     type="varchar">
     <columnParam
       name="size"
@@ -55,8 +53,7 @@
   <column
     desc="Identifies add/update or delete"
     name="LastSubmitAction"
-    nullok="false"
-    required="true"
+    nullok="true"
     type="text"></column>
   <column
     default="0"

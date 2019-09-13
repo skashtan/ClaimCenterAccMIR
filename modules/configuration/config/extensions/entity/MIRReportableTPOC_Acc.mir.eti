@@ -26,5 +26,5 @@ type="dateonly"/>
     desc="Reverse foreign key to MIRReportable"
     fkentity="MIRReportable_Acc"
     name="MIRReportable"
-    nullok="false"/>
+    nullok="true"/>
 </entity>

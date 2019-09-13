@@ -7,7 +7,7 @@
   <column
     desc="The CMS-provided (or CMS-equivalent) error/compliance code"
     name="CMSCode"
-    nullok="false"
+    nullok="true"
     type="varchar">
     <columnParam
       name="size"
@@ -16,7 +16,7 @@
   <column
     desc="E” for errors, “C” for compliance"
     name="CodeType"
-    nullok="false"
+    nullok="true"
     type="varchar">
     <columnParam
       name="size"
@@ -25,7 +25,7 @@
   <column
     desc="Detailed description of the error code"
     name="ResponseDescription"
-    nullok="false"
+    nullok="true"
     type="varchar">
     <columnParam
       name="size"
@@ -44,5 +44,5 @@
     desc="Reverse foreign key to MIRReportableHist"
     fkentity="MIRReportableHist_Acc"
     name="MIRReportableHist"
-    nullok="false"/>
+    nullok="true"/>
 </entity>
