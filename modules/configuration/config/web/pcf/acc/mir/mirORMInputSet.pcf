@@ -6,18 +6,20 @@
     editable="true"
     id="MirORMInputSet">
     <Require
-      name="anMIRReportable_Acc"
+      name="anMIRReportable__Acc"
       type="MIRReportable_Acc"/>
     <BooleanRadioInput
       editable="true"
       id="HasOrm"
       label="DisplayKey.get(&quot;Accelerator.mir.label.orm&quot;)"
-      value="anMIRReportable_Acc.HasORM"
+      required="true"
+      value="anMIRReportable__Acc.HasORM"
       visible="true"/>
     <DateInput
       editable="true"
       id="OrmTermDate"
       label="DisplayKey.get(&quot;Accelerator.mir.label.ormterm&quot;)"
-      value="anMIRReportable_Acc.ORMTermDate"/>
+      required="anMIRReportable__Acc.HasORM == Boolean.TRUE"
+      value="anMIRReportable__Acc.ORMTermDate"/>
   </InputSet>
 </PCF>

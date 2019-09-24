@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
   <InputSet
-    id="MIRExposureInputSet">
+    id="MirExposureInputSet">
     <Require
       name="anExposure"
       type="Exposure"/>
@@ -35,6 +35,7 @@
       editable="true"
       id="mirDateOfBirth"
       label="DisplayKey.get(&quot;Web.ContactDetail.AdditionalInfo.DateOfBirth&quot;)"
+      required="true"
       validationExpression="((anExposure.Claimant as Person).DateOfBirth == null or (anExposure.Claimant as Person).DateOfBirth &lt;= gw.api.upgrade.Coercions.makeDateFrom(&quot;today&quot;)) ? null : DisplayKey.get(&quot;Web.ContactDetail.AdditionalInfo.DateOfBirth.FutureError&quot;)"
       value="(anExposure.Claimant as Person).DateOfBirth"/>
     <PrivacyInput
@@ -42,12 +43,13 @@
       encryptionExpression="(anExposure.Claimant as Person).maskTaxId(VALUE)"
       id="mirTaxID"
       label="DisplayKey.get(&quot;Web.ContactDetail.AdditionalInfo.TaxID&quot;)"
-      required="false"
+      required="true"
       value="(anExposure.Claimant as Person).Person.TaxID"/>
     <TypeKeyInput
       editable="true"
       id="mirGender"
       label="DisplayKey.get(&quot;Web.ContactDetail.AdditionalInfo.Gender&quot;)"
+      required="true"
       value="(anExposure.Claimant as Person).Gender"
       valueType="typekey.GenderType"/>
   </InputSet>

@@ -7,25 +7,30 @@
     <Require
       name="anMIRReportable_Acc"
       type="MIRReportable_Acc"/>
+    <ExposeIterator
+      valueType="MIRReportableTPOC_Acc"
+      widget="MirTPOCLV"/>
     <RowIterator
       editable="true"
       elementName="TPOCDetail"
-      pageSize="5"
+      pageSize="10"
       toAdd="anMIRReportable_Acc.addToTPOC(TPOCDetail)"
       toRemove="anMIRReportable_Acc.removeFromTPOC(TPOCDetail)"
       value="anMIRReportable_Acc.TPOC"
-      valueType="entity.MIRReportableTPOC_Acc[]">
+      valueType="MIRReportableTPOC_Acc[]">
       <Row>
         <DateCell
           dateFormat="medium"
           editable="true"
           id="tpocDate"
           label="DisplayKey.get(&quot;Accelerator.mir.labels.TPOCDate&quot;)"
+          required="true"
           value="TPOCDetail.TpocDate"/>
         <CurrencyCell
           editable="true"
           id="tpocAmount"
           label="DisplayKey.get(&quot;Accelerator.mir.labels.TPOCAmount&quot;)"
+          required="true"
           value="TPOCDetail.TpocAmount"/>
         <DateCell
           dateFormat="medium"
