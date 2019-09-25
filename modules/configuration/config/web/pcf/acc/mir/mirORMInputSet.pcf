@@ -12,7 +12,7 @@
       editable="true"
       id="HasOrm"
       label="DisplayKey.get(&quot;Accelerator.mir.label.orm&quot;)"
-      required="true"
+      required="anMIRReportable__Acc.MIRReportingHistorys.maxBy(\h -&gt; h.SubmitDateTime).BeneficiaryStatus.toLowerCase() == &quot;yes&quot;"
       value="anMIRReportable__Acc.HasORM"
       visible="true"/>
     <DateInput

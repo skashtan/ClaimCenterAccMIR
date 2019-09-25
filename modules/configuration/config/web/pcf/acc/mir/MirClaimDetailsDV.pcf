@@ -9,6 +9,11 @@
       name="anExposure"
       type="Exposure"/>
     <InputColumn>
+      <ButtonInput
+        align="left"
+        boldValue="true"
+        id="mirSubmitNow"
+        value="DisplayKey.get(&quot;Accelerator.mir.heading.SubmitNow&quot;) "/>
       <Label
         id="mirResponseHeading"
         label="DisplayKey.get(&quot;Accelerator.mir.heading.LatestRespCodes&quot;) "/>
