@@ -5,5 +5,11 @@
       <url>file:/ClaimCenter/DataService.xml</url>
     </resource>
   </resources>
-  <settings></settings>
+  <settings>
+    <configuration-provider>
+      <env/>
+      <server/>
+      <type-name>acc.mir.webservice.submitclaims.MirSubmitAuthProvider.MirConfigurationProvider</type-name>
+    </configuration-provider>
+  </settings>
 </webservice-collection>
